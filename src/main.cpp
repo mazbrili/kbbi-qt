@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     #ifdef Q_OS_HAIKU
         QDir::setCurrent(QCoreApplication::applicationDirPath());
         dbPath = QDir::currentPath() + "/data/" + DB_NAME;  
-    #elif Q_OS_LINUX 
+    #elif Q_OS_LINUX
         dbPath = "/usr/share/KBBI-Qt/data/" + DB_NAME;
     #else
         dbPath = QDir::currentPath() + "/" + DB_NAME;
